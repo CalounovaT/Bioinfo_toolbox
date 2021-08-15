@@ -1,5 +1,9 @@
 # Bioinfo_toolbox
 ## Prepare steps
+
+This toolbox requires Biopython and msms packages (msms is required only for computing structure related properties).
+You can install them with conda. Alternatively, install Biopython using pip and install msms manually.
+
 ### Create conda environment and install needed packages
 create an environment
 `conda create --name toolbox`
@@ -12,6 +16,21 @@ add bioconda channel
 
 install necessary packages
 `conda install biopython msms`
+
+### Pip and manual installation
+#### Biopython
+create python virtual environment
+`python -m venv toolbox`
+
+activate it
+`source bioinf/bin/activate`
+
+install Biopython
+`pip install msms biopython`
+
+#### msms
+Download msms tool from: http://mgltools.scripps.edu/downloads#msms based on your OS.
+After the installation, make sure that msms is in your PATH variable.
 
 ### Clone this repository
 `git clone "https://github.com/CalounovaT/Bioinfo_toolbox/"`
@@ -62,11 +81,11 @@ Comptue the width of the structure (maximum of distance of any two atoms).
 
 Obtain list of atoms being in given distance from given ligand (HETATM). - give ligand and distance as arguments
 
-`./main.py pdb --atoms ligand distance 1B0B.pdb`
+`./main.py pdb --atoms SAC 10 1B0B.pdb`
 
 Obtain list of residues being in given distance from given ligand (HETATM).
 
-`./main.py pdb --residues ligand distance 1BOB.pdb`
+`./main.py pdb --residues SAC 10 1BOB.pdb`
 
 ### 5) Processing multiple sequence alignment
 Retrieve sequence by its position
