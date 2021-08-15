@@ -85,7 +85,7 @@ Obtain list of atoms being in given distance from given ligand (HETATM). - give 
 
 Obtain list of residues being in given distance from given ligand (HETATM).
 
-`./main.py pdb --residues SAC 10 1BOB.pdb`
+`./main.py pdb --residues SAC 10 1B0B.pdb`
 
 ### 5) Processing multiple sequence alignment
 Retrieve sequence by its position
