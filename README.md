@@ -94,7 +94,7 @@ Retrieve sequence by its position
 
 Retrieve sequence by its id
 
-`./main.py msa --sequenceid "seq1" align.msa`
+`./main.py msa --sequenceid "UniRef90_UPI000" align.msa`
 
 Retrieve given column from the MSA
 
