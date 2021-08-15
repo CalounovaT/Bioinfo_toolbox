@@ -117,10 +117,14 @@ elif config.action == 'pdb':
         print(pdb.count_width())
     if config.atoms:
         ligand, distance = config.atoms
-        print(pdb.get_close_atoms(ligand, distance))
+        r = [r for r in pdb.structure.get_residues() if r.get_resname() == ligand][0]
+        a = list(r.get_atoms())[0]
+        print(pdb.get_close_atoms(a, int(distance)))
     if config.residues:
         ligand, distance = config.residues
-        print(pdb.get_close_residues(ligand, distance))
+        r = [r for r in pdb.structure.get_residues() if r.get_resname() == ligand][0]
+        a = list(r.get_atoms())[0]
+        print(pdb.get_close_residues(a, int(distance)))
 
 elif config.action == 'msa':
     f = config.file
