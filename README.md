@@ -1,7 +1,7 @@
 # Bioinfo_toolbox
 ## Prepare steps
 
-This toolbox requires Biopython and msms packages (msms is required only for computing structure related properties).
+This toolbox requires Biopython and msms packages (msms is required only for computing structure related properties, it is used by Bio.PDB.ResidueDepth module).
 You can install them with conda. Alternatively, install Biopython using pip and install msms manually.
 
 ### Create conda environment and install needed packages
