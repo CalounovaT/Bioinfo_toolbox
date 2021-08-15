@@ -102,14 +102,14 @@ Retrieve given column from the MSA
 
 Retrieve sum of pairs score of a column
 
-`./main.py msa -spcolumn 0 align.msa`
+`./main.py msa --spcolumn 0 align.msa`
 
 Retrieve sum of pairs score of a msa
 
-`./main.py msa -spmsa align.msa`
+`./main.py msa --spmsa align.msa`
 
 ### 6) Conservation determination from multiple aligned sequences
-compute conservation score of msa
+Compute conservation of all positions in the msa
 
 `./main.py conservation --conservation align.msa`
 
@@ -128,7 +128,7 @@ Compute the ratio of surface and buried amino acids.
 
 Output data for a histogram of amino acids composition of buried and exposed amino acids.
 
-` ./main.py properties --surfacecounts 1B0B.pdb`
+`./main.py properties --surfacecounts 1B0B.pdb`
 
 `./main.py properties --buriedcounts 1B0B.pdb`
 
@@ -136,4 +136,4 @@ Quantify portion of polar amino acids in the core and on the surface of the prot
 
 `./main.py properties --surfacepolar 1B0B.pdb`
 
-` ./main.py properties --buriedpolar 1B0B.pdb`
+`./main.py properties --buriedpolar 1B0B.pdb`
